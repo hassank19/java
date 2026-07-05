@@ -1,0 +1,31 @@
+1. First Program
+public class Hello { public static void main(String[] args){
+System.out.println("Hello, World!"); }}
+
+2. Variables
+int age=20; double salary=45000.5; char grade='A'; boolean passed=true;
+String name="Monika";
+
+3. User Input
+Use Scanner: import java.util.Scanner; Scanner sc=new Scanner(System.in);
+
+4. Control Statements
+if, if-else, switch
+
+5. Loops
+for, while, do-while
+
+6. Arrays
+int[] arr={1,2,3};
+
+7. Methods
+static int add(int a,int b){ return a+b; }
+
+8. OOP
+Classes, Objects, Constructors, Inheritance, Polymorphism
+
+9. Exception Handling
+try { } catch(Exception e){ }
+
+10. File Handling
+Use FileWriter/FileR
