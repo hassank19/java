@@ -46,6 +46,29 @@ class Hello{
         System.out.print("Hello World");
     }
 } if u tried running this, on vs, it will run but according to jvm its wrong, it looks for a static method, if u run it on cmd, it will not run
+
+//not necessary that you have to make object in another class, you can make it within the class too
+
+public class nonstaticmethod{
+    String name;
+    String course;
+    String program;
+
+    void getinfo(){
+        name = "alex";
+        course = "bca";
+        program = "java";
+        System.out.println("Name is: " + name);
+        System.out.println("Course is: " + course);
+        System.out.println("Program is: " + program);
+    }
+
+
+    public static void main(String a[]){
+        nonstaticmethod myobject = new nonstaticmethod();
+        myobject.getinfo();
+    }
+}
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
@@ -61,7 +84,7 @@ a = sc.nextInt(); to scan and store
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ---Public vs Private vs Protected---
-these are called acces modifiers, they exist so we can modify who can access a method, variable or class etc.
+these are called access modifiers, they exist so we can modify who can access a method, variable or class etc.
 --Only one class in java is allowed to be public
 
 public class temp{ //one public class, if you make it private, it woudlnt allow
@@ -77,3 +100,5 @@ class newc{
         System.out.print(temp.name);
     }
 }
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
